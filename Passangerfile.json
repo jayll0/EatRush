@@ -1,0 +1,6 @@
+{
+  "app_type": "python",
+  "app_root": "/home/eatrushd/repositories/EatRush",
+  "python": "/usr/bin/python", 
+  "virtualenv": "/home/eatrushd/repositories/EatRush/venv"  
+}
