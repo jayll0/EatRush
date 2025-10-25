@@ -1,7 +1,7 @@
 {
   "app_type": "python",
   "app_root": "/repositories/EatRush", 
-  "python": "/usr/bin/python", 
+  "python": "/repositories/EatRush/venv/Scripts/python.exe", 
   "virtualenv": "/repositories/EatRush/venv",
   "startup_file": "passenger_wsgi.py"
 }
