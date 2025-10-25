@@ -1,16 +1,14 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import mysql.connector
 
-# Mengatur aplikasi Flask
 app = Flask(__name__)
 app.secret_key = 'some_secret_key'
 
-# Mengatur koneksi ke database MySQL
 db_config = {
     'host': 'localhost',
-    'user': 'root',
-    'password': '',  # Ganti dengan password MySQL Anda
-    'database': 'crud_db', # Ganti dengan nama database Anda
+    'user': 'eatrushd_eatrush',
+    'password': '6!6Sgk1KP5s+Md', 
+    'database': 'eatrushd_eatrush', 
     'port': 3306
 }
 
