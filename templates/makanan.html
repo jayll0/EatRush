@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Daftar Makanan - EatRush</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body{font-family:Arial;background:#f9fafb;margin:0;padding:28px}
+    .wrap{max-width:800px;margin:0 auto}
+    h1{color:#e63946}
+    ul{list-style:none;padding:0}
+    li{background:#fff;padding:12px;border-radius:8px;border:1px solid #e6e6e6;margin:10px 0;display:flex;justify-content:space-between;align-items:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Daftar Makanan</h1>
+    <ul>
+      {% for item in makanan %}
+        <li>
+          <div>
+            <strong>{{ item.NamaMakanan }}</strong><br>
+            <small>Stok: {{ item.Stok if item.Stok is defined else '—' }}</small>
+          </div>
+          <div>Rp{{ ("%.0f"|format(item.HargaMakanan)) }}</div>
+        </li>
+      {% else %}
+        <li>Tidak ada data makanan.</li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>

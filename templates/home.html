@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <title>Home - EatRush</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body{font-family:Arial;background:#f3f4f6;margin:0;padding:28px}
+    .wrap{max-width:900px;margin:32px auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 8px 30px rgba(2,6,23,0.08)}
+    h1{margin:0 0 8px}
+    .meta{color:#6b7280;margin-bottom:18px}
+    form{display:inline-block}
+    button.btn{padding:8px 14px;background:#ef4444;color:#fff;border:none;border-radius:8px;cursor:pointer}
+    a.link{display:inline-block;margin-left:10px;text-decoration:none;color:#2563eb}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Home</h1>
+    <div class="meta">Selamat datang, 
+      {{ user.NamaPengguna if user and user.NamaPengguna else user.Email if user else 'Pengguna' }}
+    </div>
+
+    <p>Menu:</p>
+    <ul>
+      <li><a href="/makanan" class="link">Daftar Makanan</a></li>
+      <li><a href="/signup" class="link">Tambah akun baru</a></li>
+    </ul>
+
+    <form action="/logout" method="post">
+      <button class="btn">Logout</button>
+    </form>
+  </div>
+</body>
+</html>
