@@ -1,7 +1,0 @@
-{
-  "app_type": "python",
-  "app_root": "/public_html/eatrushapps", 
-  "python": "/public_html/eatrushapps/venv/Scripts/python.exe", 
-  "virtualenv": "/public_html/eatrushapps/venv",
-  "startup_file": "passenger_wsgi.py"
-}
